@@ -1,36 +1,44 @@
 .navegacion {
-  background-color: #333;
+  background-color: var(--nav-bg);
   padding: 1rem;
 }
 
 .navegacion ul {
   list-style: none;
   display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
+  gap: 1.5rem;
   justify-content: center;
+  align-items: center;
 }
 
 .navegacion a {
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: background-color 0.3s;
 }
 
 .navegacion a.active {
   background-color: #3b82f6;
-  font-weight: bold;
 }
 
-.navegacion a:hover {
-  background-color: #555;
+.btn-tema {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-tema:hover {
+  background: white;
+  color: black;
 }
 
 .contenido {
   padding: 2rem;
-  text-align: center;
+  min-height: 80vh;
 }
